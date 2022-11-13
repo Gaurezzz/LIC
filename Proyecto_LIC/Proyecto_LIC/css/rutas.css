@@ -1,0 +1,301 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
+*{
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+   word-wrap: break-word;
+}
+.s{
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.imagen{
+    height: 400px;
+    position: relative;
+}
+
+.imagen img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.titulo h1{
+    padding: 50px;
+    text-align: center;
+    font-size: 55px;
+}
+
+/*Parte de la informacion*/
+
+.info{
+    background: linear-gradient(45deg,#b79891, #94716b);
+}
+
+.info .row2{
+    display: flex;
+    align-items: center;
+    gap:2rem;
+    flex-wrap: wrap;
+    padding:2rem 0;
+    padding-bottom: 3rem;
+}
+
+.info .row2 .img-container{
+    flex:1 1 40rem;
+    position: relative;
+}
+
+.info .row2 .img-container img{
+    width:105%;
+    border:1rem solid #fff;
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    height: 105%;
+    object-fit: cover;
+}
+.info .row2 .contenido{
+    flex:1 1 40rem;
+}
+.info .row .content h3{
+    font-size: 3rem;
+    color:#fff;
+}
+
+
+.info .row2 .contenido p{
+    font-size: 1.0rem;
+    font-family: 'Poppins', sans-serif;
+    color:#fff;
+    padding:.6rem ;
+    padding-top: 2.5rem;
+    line-height: 1.5;
+}
+
+.destinos{
+	width: 100%;
+	max-width: 1080px;
+	margin: auto;
+	padding: 20px;
+	margin-top: 20px;
+	text-align: left;
+	color: #7a7a7a;
+}
+
+/*Destinos a visitar*/
+
+.contenedor3{
+    position: relative;
+    height: 350px;
+    display: flex;
+    left: 160px;
+    margin:20px;
+}
+
+.contenedor3 .imagen{
+    align-items: center;    
+    height: 100%;
+    width: 300px;
+    margin-left: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.contenedor3 .imagen img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(50%);
+    transition: transform 400ms;
+
+}
+
+.contenedor3 .imagen:hover img{
+    transform: scale(1.2);
+    filter: brightness(100%);
+}
+
+.contenedor3 .imagen p{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    text-align: center;
+    color: white;
+    top: 90%;
+
+}
+
+.contenedor4{
+    position: relative;
+    height: 350px;
+    display: flex;
+    left: 160px;
+    margin:20px;
+}
+
+.contenedor4 .imagen{
+    align-items: center;    
+    height: 100%;
+    width: 300px;
+    margin-left: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.contenedor4 .imagen img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(50%);
+    transition: transform 400ms;
+
+}
+
+.contenedor4 .imagen:hover img{
+    transform: scale(1.2);
+    filter: brightness(100%);
+}
+
+.contenedor4 .imagen p{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    text-align: center;
+    color: white;
+    top: 90%;
+
+}
+
+/*Para galeria de imagenes de la pagina de ruta sol y playa*/
+
+.gallery-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: 150px;
+    padding: 20px;
+    grid-gap:10px ;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.gallery-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery-item  img{
+    overflow: hidden;
+    filter: brightness(50%);
+    transition: transform 400ms;
+}
+
+.gallery-item:hover img{
+    transform: scale(1.2);
+    filter: brightness(100%);
+}
+
+.gallery-item{
+    position: relative;
+    overflow: hidden;
+
+}
+
+.gallery-tittle{
+    position: absolute;
+    bottom: 0;
+    color: white;
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    font-size: 20px;
+
+}
+.gallery-item:nth-child(4){
+    grid-column-start: span 2;
+}
+
+.gallery-item:nth-child(5){
+    grid-row-start: span 2;
+}
+
+.gallery-item:nth-child(9){
+    grid-column-start: span 2;
+}
+
+.gallery-item:nth-child(10){
+    grid-row-start: span 2;
+}
+
+/*para tablet*/
+@media (min-width:768px){
+    .gallery-container{
+        grid-template-columns: repeat(4,1fr);
+
+    }
+
+    .gallery-item:nth-child(3){
+        grid-column-start: span 2;
+    }
+
+    .gallery-item:nth-child(4){
+        grid-column-start: span 3;
+    }
+    
+    .gallery-item:nth-child(5){
+        grid-row-start: span 3;
+    }
+    
+    .gallery-item:nth-child(9){
+        grid-column-start: span 3;
+    }
+}
+
+/*para escritorio*/
+@media (min-width:1024px){
+    .gallery-container{
+        grid-template-columns: repeat(5,1fr);
+        grid-auto-rows: 300px;
+
+    }
+
+    .gallery-item:nth-child(1){
+        grid-column-start: span 2;
+        grid-row-start: span 2;
+    }
+
+    .gallery-item:nth-child(4){
+        grid-column-start: span 3;
+        grid-row-start: span 3;
+        }
+    
+    .gallery-item:nth-child(10){
+        grid-row-start: span 1;
+    }
+    
+    .gallery-item:nth-child(9){
+        grid-column-start: span 2;
+
+    }
+
+    .gallery-item:nth-child(14){
+        grid-column-start: span 2;
+    }
+
+    .gallery-item:nth-child(8){
+        grid-column-start: span 2;
+    }
+
+    .gallery-item:nth-child(5){
+        grid-row-start: span 2;
+    }
+}
+
+
+
+

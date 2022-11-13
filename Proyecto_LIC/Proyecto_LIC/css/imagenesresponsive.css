@@ -1,0 +1,17 @@
+@media (max-width:1200px){
+    .contenedor3{
+        left: 0;
+    }
+
+    .contenedor3 .imagen p{
+        top:85%;
+    }
+
+.contenedor4{
+    left: 0;
+}
+
+.contenedor4 .imagen p{
+    top: 85%;
+}
+}
