@@ -12,7 +12,7 @@
     overflow-x: hidden;
 }
 .inicio{                   
-    width: 105%;
+    width: 100%;
     height: 600px;
     animation: inicio 10s infinite linear alternate;
     background-size: 100% 100%;
@@ -150,26 +150,32 @@
     align-items: center;
     gap:2rem;
     flex-wrap: wrap;
-    padding:2rem 0;
+    padding:0rem;
+    margin: 0%;
     padding-bottom: 3rem;
+    width:100%;
 }
 
 .igle .row .video-container{
     flex:1 1 40rem;
     position: relative;
+    padding: 0%;
+    width:100%;
 }
 
 .igle .row .video-container video{
-    width:105%;
+    width:100%;
     border:1.5rem solid #fff;
-    border-radius: .5rem;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
-    height: 105%;
+    height: 10%;
     object-fit: cover;
+    margin: 0%;
 }
 
 .igle .row .content{
     flex:1 1 40rem;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 .igle .row .content h3{
