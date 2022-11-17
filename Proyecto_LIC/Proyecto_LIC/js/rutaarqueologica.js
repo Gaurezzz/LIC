@@ -1,36 +1,31 @@
 
-console.log('HOLIII')
 function init(){
-    var showinfo = document.getElementById("boton");
+    var showinfo = document.getElementById("enviar");
     if(showinfo.addEventListener){
-        showinfo.addEventListener("click", function(){
-        enviar();
-        })
+        showinfo.addEventListener("click", enviar, false);
     }
     else if(showinfo.attachEvent){
-        showinfo.attachEvent("onclick", function(){
-            enviar();
-        })
+        showinfo.attachEvent("onclick", enviar);
     }
 }
 
 
 function enviar(){
-console.log("Marlon come pedo");
 var usuario ={"Persona":[
-    {"nombre":document.getElementById('Firstname').value,
-    "apellido":document.getElementById('Lastname').value,
-    "direccion":document.getElementById('Direccion').value,
-    "dui":document.getElementById('Dui').value,
-    "edad":document.getElementById('Edad').value,
-    "email":document.getElementById('email').value,
-    "telefono":document.getElementById('number').value,
-    "tiempo":form.dias.options[form.dias.selectedindex].value,
-    "cantidad_personas":form.n.options[form.n.selectedindex].value,
-    "precio":document.getElementById('precio').value
+    {"nombre":formVenta.Firstname.value,
+    "apellido":formVenta.Lastname.value,
+    "direccion":formVenta.Direccion.value,
+    "dui":formVenta.Dui.value,
+    "edad":formVenta.Edad.value,
+    "email":formVenta.email.value,
+    "telefono":formVenta.number.value,
+    "tiempo":formVenta.dias.value,
+    "cantidad_personas":formVenta.n.value,
+    "precio": 50
     }
 ]}
-console.log(usuario);
+var myWindow = window.open("", "_self");
+myWindow.document.write("<p>"+JSON.stringify(usuario)+"</p>");
 }
 
 
