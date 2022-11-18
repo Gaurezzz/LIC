@@ -254,3 +254,10 @@
 .plan figcaption{
     padding: 1em;
 }
+
+.conf{
+    background-color: #b8e8b8;
+}
+.fracaso{
+    background-color: #ffcaca;
+}
