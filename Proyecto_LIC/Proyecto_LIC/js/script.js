@@ -48,8 +48,8 @@ $d.addEventListener("click", e => {
 			quantity:1
 		}],
 		mode:"payment",
-		successUrl:"http://127.0.0.1:5500/Confirmacion.html",
-		cancelUrl:"http://127.0.0.1:5500/Fracaso.html"
+		successUrl:"http://127.0.0.1:5500/Proyecto_LIC/Confirmacion.html",
+		cancelUrl:"http://127.0.0.1:5500/Proyecto_LIC/Fracaso.html"
 	})
 	.then (res=> {
 		if(res.error){
