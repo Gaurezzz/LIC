@@ -223,3 +223,34 @@
 
 }
 
+.imgPlan{
+    max-width: 250px;
+    max-height: 150px;
+    margin-top: 10px;
+}
+.planes{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.planes > *{
+    flex: 1 1;
+}
+
+.plan{
+    background: transparent;
+    text-align: center;
+    cursor: pointer;
+    min-width: 310px;
+    font-size: 1.2em;
+    font-weight: bold;
+    
+}
+.plan:hover{
+    transform: scale(1.1);
+}
+
+.plan figcaption{
+    padding: 1em;
+}
